@@ -1,0 +1,49 @@
+{
+  "homepage" : "https://github.com/guzzl3r/thinkApp",
+  "name": "think",
+  "version": "1.0.0",
+  "description": "Desktop app for think notes service",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "guzzl3r",
+  "license": "ISC",
+  "build": {
+    "appId": "think",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "maintainer" : "guzzl3r"
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^10.1.1",
+    "electron-builder": "^22.8.0"
+  }
+}

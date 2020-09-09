@@ -1,0 +1,67 @@
+@font-face{
+	font-family: JSBold;
+	src: url('Typographies/JosefinSans-Bold.ttf');
+}
+
+@font-face{
+	font-family: JSRegular;
+	src: url('Typographies/JosefinSans-Regular.ttf');
+}
+
+@font-face{
+	font-family: JSLight;
+	src: url('Typographies/JosefinSans-Light.ttf');
+}
+@font-face{
+	font-family: JSMedium;
+	src: url('Typographies/JosefinSans-Medium.ttf');
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: JSRegular
+}
+
+.time-title{
+	font-family: JSMedium;
+
+}
+textarea:focus {
+	outline: none;
+}
+
+.form-control:focus{
+	border-color: rgb(255, 0, 0);
+}
+.submit-button{
+	border-radius: 20px;
+	border : 2px solid rgb(130, 87 ,224);
+	padding: 7px 20px 7px 20px;
+	transition: all 0.3s;
+	background-color: white;
+}
+.submit-button:hover{
+	background-color: rgb(130, 87 ,224);
+	color: white;
+
+}
+
+.box-w-shadow{
+  	border-radius: 20px;
+  	border: none;
+  	height: 500px;
+  	width: 300px;
+  	box-shadow: 5px 5px 5px 5px #888888;
+  	margin-top: 30px;
+}
+
+.padding-box{
+  	padding-top: 20px;
+  }
+
+.error {
+	font-family: JSLight;
+	margin-top: 40px;
+	font-size: 14px;
+}
